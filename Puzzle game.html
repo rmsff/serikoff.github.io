@@ -7,7 +7,7 @@
     <title>Puzzle game!</title>
   </head>
   <body>
-    <div class="container m-3">
+    <div class="container" style="margin-top:0.5cm">
       <div class="gem-puzzle" align="center"></div>
     </div>
     <script>
@@ -25,6 +25,7 @@
           for (let j = 0; j < 4; j += 1) {
             const cell = row.insertCell();
             cell.className = 'p-3';
+            cell.setAttribute("align", "center");
             if (i === 3 && j === 3) {
               cell.classList.add('table-active');
             } else {
